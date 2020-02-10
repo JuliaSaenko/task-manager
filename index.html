@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="tasks">
+      <div class="tasks__header">
+        <button class="tasks__new-btn btn" type="button">Add new task</button>
+        <h1 class="tasks__title">Tasks</h1>
+        <img class="tasks__img" src="img/cat.png" width="60" height="45">
+      </div>
+      <div class="tasks__wrapper">
+        <div class="tasks-board"></div>
+        <div class="new-task hidden"></div>
+      </div>
+      <div class="confirm-popup hidden">
+        <p>Are you sure you want to remove this task?</p>
+        <button class="confirm-popup__btn confirm-popup__btn--confirm btn" type="button">Yes</button>
+        <button class="confirm-popup__btn confirm-popup__btn--cancel btn" type="button">No</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="js/Task.js"></script>
+  <script src="js/request.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

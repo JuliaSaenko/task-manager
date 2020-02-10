@@ -39,7 +39,7 @@ function createTask(taskElement) {
   setTaskType(task, taskElement);
   setTaskPriority(task, taskElement);
 
-  const taskForm = task.querySelector('.task__form')
+  const taskForm = task.querySelector('.task__form');
 
   const taskEditBtn = task.querySelector('.task__edit');
   taskEditBtn.setAttribute('data-id', taskElement.id);
@@ -127,14 +127,10 @@ function changeTaskInfo(taskElement, task) {
   taskElement.type = taskTypeSelect.options[taskTypeSelect.selectedIndex].value;
   taskElement.priority = taskPrioritySelect.options[taskPrioritySelect.selectedIndex].value;
 
-  console.log(tasksData);
-
   createTasks(tasksData);
 
   return taskElement;
 }
-
-
 
 function showConfirmMessage(tasksData, taskId) {
   confirmPopup.classList.remove('hidden');
